@@ -1,0 +1,9 @@
+/* Застосувати стилі до псевдоелемента .box :: before у разі ховера по елементу .box */
+.box:hover::before {
+  color: green;
+}
+
+/* Застосувати стилі до псевдоелемента .box :: after у разі ховера по елементу .box */
+.box:hover::after {
+  color: tomato;
+}
