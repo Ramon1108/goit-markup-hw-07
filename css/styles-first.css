@@ -78,8 +78,7 @@ p {
 /* site nav */
 header {
     border-bottom: 1px solid var(--footer-text-color);
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+
 }
 .main-nav {
     display: flex;
