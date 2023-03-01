@@ -218,7 +218,7 @@ header {
 .header-social .social-our{
     display: flex; 
 }
-.social-our.list .social-link {
+.mobile-menu .social-link {
     width: 40px;
     height: 40px;
     display: flex;
@@ -230,12 +230,8 @@ header {
     transition: background-color 250ms var(--cubic);
 }
 
-.social-our.list .social-item:not(:first-child) {
-    margin-left: 24px;
-}
-
-.social-our.list .social-link:hover,
-.social-our.list .social-link:focus {
+.mobile-menu .social-link:hover,
+.mobile-menu .social-link:focus {
     background-color: var(--active-color);
 }
 
@@ -255,7 +251,7 @@ header {
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/adaptive-img/Dark-bg\ mobile\ 1x.jpg);
     background-size: cover;    
-    max-width: 432px;
+    max-width: 100%;
     }
  
  @media screen and (min-device-pixel-ratio-2px ),
@@ -583,7 +579,213 @@ header {
         border-color: var(--active-color);
     }
     /* footer */
+    .container.footer{
+        margin-bottom: 0;
+        background-color: var(--logo-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .footer-logo {
+        margin-bottom: 16px;
+    }
+    .footer-logo .logofirst{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;       
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;    
+    }
+    .footer-logo .logosecond{
+        color: var(--btn-bacground-color);
+    }
+    .footer-discription {
+        max-width: 268px;
+        color: var(--footer-text-color);
+        text-align: left;
+    }
+    .footer .title-social{
+        display: block;
+        color: var(--primery-bg-color);
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    .footer .social-our{
+        display: flex;
+        justify-content: center;
+    }
+    .footer .social-link {   
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms var(--cubic);
+    }
+    .footer .social-link:hover,
+    .footer .social-link:focus {
+        background-color: var(--footer-hover-color);
+    }
+    .footer .social-item:not(:first-child) {
+        margin-left: 16px;
+    }
+    .modal-title.footer{
+        color: var(--primery-bg-color);
+    }
+    .input-footer {
+        height: 40px;
+        padding: 8px 16px 8px 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 2;
+        color: var(--footer-text-color);
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 250ms var(--cubic);
+    }
+    
+    .input-footer:hover,
+    .input-footer:focus {
+        border-color: var(--btn-color);
+    }
+    
+    .btn-footer {
+        background-color: var(--btn-color);
+        color: var(--primery-bg-color);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        display: flex;
+        width: 165px;
+        height: 40px;
+        padding: 8px 24px 8px 24px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        transition: background-color 250ms var(--cubic);
+        position: relative;
+    }
+    
+    .btn-footer:hover,
+    .btn-footer:focus {
+        background-color: var(--active-color);
+    }
+    
+    .btn-footer .send-icon {
+        position: absolute;
+        top: 50%;
+        right: 24px;
+        transform: translateY(-50%);
+    }
+
+
     /* portfolio */
+    .btn-portfolio {
+    background-color: var(--btn-bacground-color);
+    color: var(--btn-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    height: 48px;
+    border: 1px solid var(--footer-text-color);
+    border-radius: 4px;
+    padding: 12px 24px;
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic), border-color 250ms  var(--cubic);
+   }
+
+    .btn-portfolio:focus,
+    .btn-portfolio:hover {
+        background-color: var(--active-color);
+        color: var(--primery-bg-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-color: var(--active-color);
+    }
+    .portfolio .list.buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio .list.buttons .item:not(:first-child){
+        margin-left: 24px;
+    }
+    .portfolio .title-item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    .section.portfolio .list-item {
+        color: var(--title-text-color);
+        text-decoration: none;
+    }
+    .list.apps .item {
+        display: block;
+        margin-bottom: 48px;
+    }
+    .list.apps .discription {
+        border-left: 1px solid var(--footer-text-color);
+        border-right: 1px solid var(--footer-text-color);
+        border-bottom: 1px solid var(--footer-text-color);
+        padding: 32px 16px;
+    }
+     .list.apps .list-item {
+        display: block;
+        transition: box-shadow 250ms var(--cubic);
+    }
+    
+    .list.apps .list-item:hover,
+    .list.apps .list-item:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .apps-discription {
+        color: var(--primery-text-color);
+    }
+    .product-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .discritpion-product-card-thumb {
+        top: 0;
+        left: 0;
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: var(--btn-bacground-color);
+        background-color: var(--btn-color);
+        opacity: 0;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+    }
+    
+    .list-item:hover .discritpion-product-card-thumb {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
     /* media */
         @media screen and (min-width: 480px) {
@@ -618,11 +820,45 @@ header {
             .clients .list-item:nth-child(-n+3){
                 margin-bottom: 72px;
             }
-           
+            .container.footer{
+                text-align: center;           
+            }
+            .footer-discription{
+             margin-right: auto;
+             margin-left: auto;
+             margin-bottom: 72px;
+            }
+            .footer .social-our{
+             margin-bottom: 72px;
+            }
+            .input-footer{
+             width: 100%;
+            }
+            .btn-footer{
+             margin-left: auto;
+             margin-right: auto;
+            }
+            .portfolio .list.buttons .item:nth-child(4){
+                margin-left: 0;
+            }
+            .portfolio .list.buttons .item:nth-child(3) {
+                margin-right: 30px;
+            }
+            .portfolio .list.buttons .item:nth-child(-n+3){
+                margin-bottom: 16px;
+            }
+            .portfolio .list.buttons{
+                margin-top: 48px;
+                margin-bottom: 48px;
+            }
+            .list.apps .item{
+                width: 396px;
+            }
+
         }
             
         @media screen and (min-width: 768px) {
-            .container {
+            .container{
                 max-width: 768px;
             }
     
@@ -666,7 +902,7 @@ header {
                 height: 436px;
                 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                     url(../images/adaptive-img/Dark-bg\ tablet\ 1x.jpg);
-                max-width: 768px;
+                max-width: 100%;
             }
             .modal-window{
                 width: 408px;
@@ -710,6 +946,29 @@ header {
             .container.clients .list{
                 justify-content: center;
             }
+            .footer-discription {
+                max-width: 264px;
+                margin-bottom: 72px;
+            }
+            .container.footer{
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 108px;
+            }          
+            .label-footer{
+                display: flex;
+            }
+            .input-footer{
+                width: 264px;
+            }
+            .btn-footer{
+                margin-left: 24px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            .portfolio .list.buttons {               
+                justify-content: center;
+            }
 
         }
         @media screen and (min-width:768px) and (max-width:1199px){
@@ -735,6 +994,14 @@ header {
             .clients .list-item:nth-child(-n+3){
                 margin-bottom: 72px;
             }
+            .footer-social {
+                margin-left: 24px;
+                margin-right: 150px;
+            }
+            .portfolio .list.buttons{
+                margin-top: 64px;
+                margin-bottom: 64px;
+            }
      }
     
         @media screen and (min-width:1200px) {
@@ -753,6 +1020,9 @@ header {
             .contacts .item {
                 padding-top: 24px;
                 padding-bottom: 24px;
+            }
+            .main-nav .contacts .item:nth-child(1){
+                margin-right: 40px;
             }
     
             .menu {
@@ -833,6 +1103,14 @@ header {
             }
             .container.clients .list-item:not(:first-child){
                 margin-left: 24px;
+            }
+            .footer{
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            .portfolio .list.buttons {
+                margin-top: 96px;
+                margin-bottom: 72px;
             }
     
         }
