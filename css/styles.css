@@ -738,6 +738,7 @@ header {
     }
     .list.apps .item {
         display: block;
+        width: 360px;
         margin-bottom: 48px;
     }
     .list.apps .discription {
@@ -851,9 +852,7 @@ header {
                 margin-top: 48px;
                 margin-bottom: 48px;
             }
-            .list.apps .item{
-                width: 396px;
-            }
+
 
         }
             
