@@ -579,11 +579,13 @@ header {
         border-color: var(--active-color);
     }
     /* footer */
-    .container.footer{
-        margin-bottom: 0;
+    footer{
         background-color: var(--logo-color);
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+    .container.footer{
+        margin-bottom: 0;       
     }
     .footer-logo {
         margin-bottom: 16px;
@@ -947,12 +949,10 @@ header {
             }
             .footer-discription {
                 max-width: 264px;
-                margin-bottom: 72px;
             }
             .container.footer{
                 display: flex;
                 flex-wrap: wrap;
-                padding-left: 108px;
             }          
             .label-footer{
                 display: flex;
@@ -993,13 +993,18 @@ header {
             .clients .list-item:nth-child(-n+3){
                 margin-bottom: 72px;
             }
+            .footer-discription{
+                margin-bottom: 72px;
+            }
             .footer-social {
                 margin-left: 24px;
-                margin-right: 150px;
             }
             .portfolio .list.buttons{
                 margin-top: 64px;
                 margin-bottom: 64px;
+            }
+            .container.footer {
+                padding-left: 108px;
             }
      }
     
@@ -1103,7 +1108,7 @@ header {
             .container.clients .list-item:not(:first-child){
                 margin-left: 24px;
             }
-            .footer{
+            footer{
                 padding-top: 100px;
                 padding-bottom: 100px;
             }
@@ -1111,5 +1116,10 @@ header {
                 margin-top: 96px;
                 margin-bottom: 72px;
             }
-    
+            .footer-social{
+                margin-left: 120px;
+            }
+            .subscribe-footer{
+                margin-left: auto;
+            }   
         }
